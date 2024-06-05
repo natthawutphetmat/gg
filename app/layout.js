@@ -1,5 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import "./style.css";
+import "bootstrap/dist/css/bootstrap.min.css"; 
+import { GoogleTagManager } from '@next/third-parties/google'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +14,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+            <GoogleTagManager gtmId="GTM-WS6MM7N8" />
+
+      <body className={inter.className}>
+        
+        {children}
+      
+
+      <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"/> 
+      </body>
+    
+
     </html>
   );
 }
