@@ -8,8 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "ดูหนังออนไลน์ ดูหนังฟรี คมชัดระดับ Full HD",
-  description: "บริการดูหนังออนไลน์แบบถูกลิขสิทธิ์
-ดูหนังออนไลน์ฟรี ดูหนังใหม่ ดูหนังเต็มเรื่อง 2024",
+  description: "บริการดูหนังออนไลน์แบบถูกลิขสิทธิ์ ดูหนังออนไลน์ฟรี ดูหนังใหม่ ดูหนังเต็มเรื่อง 2024",
 };
 
 export default function RootLayout({ children }) {
